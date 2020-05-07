@@ -1,0 +1,28 @@
+/* Layout */
+#notes {
+	width: 50vw;
+	height: 50vh;
+	box-shadow: 3px 3px 3px 0px #aaa;
+}
+
+.center-container,
+body {
+	text-align: center;
+}
+
+.center-container:before,
+body:before {
+	display: inline-block;
+	content: '';
+	width: 0px;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.center-item,
+#notes {
+	display: inline-block;
+	text-align: initial;
+	vertical-align: middle;
+}
+

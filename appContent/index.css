@@ -1,0 +1,62 @@
+body {
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+
+	font-family: sans-serif;
+	overflow: hidden;
+}
+
+#noteList {
+	width: 100%;
+	height: 85%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+#noteList:empty::after {
+	display: block;
+	content: "Add some notes!";
+	text-align: center;
+	font-size: 2em;
+}
+
+#noteList > li:hover {
+	background-color: #ddd;
+}
+
+#noteList > li[selected] {
+	background-color: #aaa;
+}
+
+
+#noteInput > textarea {
+	width: 75%;
+	height: 15%;
+	resize: none;
+	overflow-y: auto !important;
+}
+
+#noteInput > button {
+	width: 25%;
+	height: 15%;
+}
+
+/* Layout */
+.inline-row,
+#noteInput {
+	font-size: 0px;
+}
+
+.inline-item,
+#noteInput > textarea,
+#noteInput > button {
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+
+	font-size: initial;
+}
+

@@ -1,0 +1,18 @@
+@keyframes growTextarea {
+	from {
+		height: 15%;
+		bottom: 0px;
+	}
+	to {
+		height: calc(50vh + 15%);
+		bottom: 50vh;
+	}
+}
+
+#noteInput > textArea:focus {
+	position: relative;
+	height: calc(50vh + 15%);
+	bottom: 50vh;
+	animation: growTextarea 0.25s;
+}
+

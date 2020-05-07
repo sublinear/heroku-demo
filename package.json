@@ -1,0 +1,14 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "Single-Page Application and RESTful API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Aaron Perez",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
